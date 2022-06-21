@@ -1,0 +1,19 @@
+{
+  "name": "自用扩展",
+  "description": "修改各种网站",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./src/hello.html",
+    "default_icon": "./src/assets/logo1.png"
+  },
+  "icons": {
+    "128": "./src/assets/logo128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://juejin.cn/*"],
+      "js": ["./src/juejin.js"]
+    }
+  ]
+}
